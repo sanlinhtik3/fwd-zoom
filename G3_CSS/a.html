@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;  
+        }
+        
+        .home {
+            background-image: url("https://nonline24.com/wp-content/uploads/2021/09/Poe-Mamhe-Thar-40-1400x800.png");
+            height: 100vh;
+            background-size: cover;
+            z-index: 0;
+            position: relative;
+        }
+        .home::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #00c3ff;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            opacity: 0.6;
+            z-index: -1;
+        }
+        .ok {
+            width: 500px;
+            z-index: 2;
+            background-color: #ffffff78;
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(2px);
+            border: 2px solid #fff;
+        }
+        .b {
+            padding: 340px 0 0 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="home">
+        <div class="b">
+            <div class="ok">
+                <h1>Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate quia, praesentium illum odio error in eligendi dolor, nisi tempora consequatur eos ad fugit deleniti esse. Ex iure reiciendis dolores.
+                </p>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>

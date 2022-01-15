@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Project</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .col {
+            flex-grow: 1;
+            width: 100%;
+        }
+        .bg-blue {
+            background-color: blue;
+        }
+        .bg-red {
+            background-color: red;
+        }
+        .bg-red {
+            background-color: grey;
+        }
+    
+        .home-img {
+            width: 70%;
+        }
+        .d-flex {
+            display: flex;
+        }
+        .justify-content-center {
+            justify-content: center;
+        }
+        .align-itme-center {
+            align-items: center;
+        }
+        .justify-content-space-between {
+            justify-content: space-between;
+        }
+        .w-75 {
+            width: 75%;
+        }
+        .border {
+            border: 1px solid #000;
+        }
+        .container-two {
+            height: 50vh;
+            width: 900px;
+            margin: auto;
+        }
+        .card {
+            width: 250px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .container-three img {
+            width: 30%;
+            margin-right: 20px;
+        }
+        .about {
+            width: 900px;
+            margin: auto;
+        }
+        .flex-direction-row-reverse {
+            flex-direction: row-reverse;
+        }
+        .margin-left {
+            margin-left: 20px;
+        }
+        .container-four img {
+            width: 80%;
+            border-radius: 50%;
+        }
+        .welcome {
+            width: 300px;
+        }
+        .container-four {
+            height: 80vh;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                flex-direction: column;
+            }
+            .container-two {
+                flex-direction: column;
+                width: 100%;
+            }
+            .about {
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+            }
+            .sm-text-center {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="home col bg-blu d-flex justify-content-center align-itme-center">
+            <div class="w-75">
+                <h1>Flexbox Project</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ex sequi aperiam, iusto nam repudiandae alias nobis dignissimos nihil magni quasi molestiae magnam enim nesciunt aliquam debitis doloribus ratione obcaecati?</p>
+            </div>
+        </div>
+        <div class="home col bg-red d-flex justify-content-center align-itme-center">
+            <img src="slh.jpg" class="home-img"  alt="">
+        </div>
+    </div>
+
+    <div class="container-two d-flex justify-content-space-between align-itme-center">
+        <div class="card text-center">
+            <h1>Card One</h1>
+            <p>
+                Lorem ipsum  adipisicing elit. Unde voluptatibus consectetur eum, at doloremque ipsum ex esse! Rerum reprehenderit quasi odit excepturi cumque quo quisquam sed unde debitis, veniam beatae.
+            </p>
+        </div>
+        <div class="card text-center">
+            <h1>Card One</h1>
+            <p>
+                Lorem ipsum dolorvoluptatibus consectetur eum, at doloremque ipsum ex esse! Rerum reprehenderit quasi odit excepturi cumque quo quisquam sed unde debitis, veniam beatae.
+            </p>
+        </div>
+        <div class="card text-center">
+            <h1>Card One</h1>
+            <p>
+                Lorem onsectetur eum, at doloremque ipsum ex esse! Rerum reprehenderit quasi odit excepturi cumque quo quisquam sed unde debitis, veniam beatae.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-three">
+        <div class="about d-flex justify-content-space-between align-itme-center">
+            <img src="./slh.jpg" class="w-75" alt="">
+            <div class="">
+                <h1>San Lin Htike</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est ullam aperiam necessitatibus eius! Voluptatem, id! Veniam, iste. Unde, dolores fugit commodi molestiae magni optio labore ab saepe. Perspiciatis, beatae quae?
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-three">
+        <div class="about d-flex flex-direction-row-reverse justify-content-space-between align-itme-center">
+            <img src="./slh.jpg" class="w-75 margin-left" alt="">
+            <div class="text-right sm-text-center">
+                <h1>San Lin Htike</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est ullam aperiam necessitatibus eius! Voluptatem, id! Veniam, iste. Unde, dolores fugit commodi molestiae magni optio labore ab saepe. Perspiciatis, beatae quae?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-four d-flex justify-content-center align-itme-center text-center">
+        <div class="welcome">
+            <img src="./slh.jpg" alt="">
+            <h1>Welcome</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto praesentium eius eaque veritatis totam officiis, eum et suscipit quas excepturi voluptas? Quia velit fugit ratione, perferendis tempore similique quis quam!
+            </p>
+        </div>
+    </div>
+    
+
+</body>
+</html>

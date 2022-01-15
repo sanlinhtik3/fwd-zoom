@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+        *{
+            margin: 0;
+            padding-top: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            height: 300vh;
+        }
+        .home {
+            height: 100vh;
+            background-size: cover;
+            background-image: url("https://nonline24.com/wp-content/uploads/2021/09/Poe-Mamhe-Thar-40-1400x800.png");
+            z-index: 0;
+            position: relative;
+        }
+        .home::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #43cea2;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            position: absolute;
+            opacity: 0.6;
+            z-index: -1;
+        }
+        .card {
+            padding: 330px 0 0 200px;
+        }
+        .home-card {
+            width: 500px;
+            background-color: #ffffff85;
+            z-index: 2;
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            border: 2px solid #fff;
+        }
+        .toup {
+            width: 50px;
+            height: 50px;
+            background: #ed2626;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        .angleup {
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="home" id="home">
+
+        <div class="card">
+            <div class="home-card">
+                <h1>Poe Mamhe Thar</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore odio expedita tempora atque impedit non, unde quis vel modi doloremque a quas ad veniam porro illum consequuntur. Ut, a esse!
+                </p>
+            </div>
+        </div>
+        
+        <a href="#home" class="toup">
+            <svg class="angleup" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-up" class="svg-inline--fa fa-angle-up fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg>
+        </a>
+
+    </div>
+    
+</body>
+</html>

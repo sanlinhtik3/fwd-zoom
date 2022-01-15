@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: #007bff;
+            border-radius: 50%;
+            /* animation-name: app; */
+            /* animation-duration: 5s; */
+            /* animation-delay: 5s; */
+            /* transform: translateX(200px); */
+            /* animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear; */
+            animation: app 5s infinite alternate;
+
+        }
+
+        @keyframes app {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(200px);
+                background-color: #dc2626;
+                border-radius: 5%;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>CSS Animation</h1>
+
+    <div class="circle"></div>
+    
+</body>
+</html>
